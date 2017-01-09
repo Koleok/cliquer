@@ -1,6 +1,7 @@
 module.exports = {
    extends: 'airbnb',
    rules: {
+     'import/no-extraneous-dependencies': 0,
      'comma-dangle': ['error', 'always-multiline'],
      'keyword-spacing': ['error'],
    },

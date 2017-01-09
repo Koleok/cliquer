@@ -1,5 +1,5 @@
 {
-  "name": "family-map",
+  "name": "cliquer",
   "version": "1.0.0",
   "description": "Make a family of related functions from a naming function and an array of arguments",
   "main": "./bundle.js",
@@ -14,13 +14,16 @@
   },
   "devDependencies": {
     "babel-jest": "^18.0.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
     "eslint": "^3.13.0",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-react": "^6.9.0",
-    "jest": "^17.0.3",
+    "jest": "^18.1.0",
     "ramda": "^0.23.0",
-    "sanctuary": "^0.11.1"
+    "sanctuary": "^0.11.1",
+    "xyz": "^2.1.0"
   }
 }

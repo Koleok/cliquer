@@ -1,9 +1,16 @@
 /* eslint-disable */
-const curry = require('lodash.curry')
-const assign = require('object-assign')
+var curry = require('lodash.curry')
+var assign = require('object-assign')
 
-module.exports = curry(function clique(namer, maker, xs) {
+var clique = curry(function clique(namer, maker, xs) {
   return xs.reduce(function(result, x) {
-    result[namer(x)] = maker(x), {}
-  }))
+    return assign({}, result, { [namer(x)]: maker(x) })
+  }, {})
 })
+
+var simpleClique = clique(x => x)
+
+module.exports = {
+  clique,
+  simpleClique,
+}
