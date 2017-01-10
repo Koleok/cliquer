@@ -17,7 +17,8 @@
     "url": "https://github.com/Koleok/cliquer.git"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "yarn test -- --watch"
   },
   "dependencies": {
     "lodash.curry": "^4.1.1",
