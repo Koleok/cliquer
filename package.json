@@ -1,6 +1,6 @@
 {
   "name": "cliquer",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Make a family of related functions from a naming function and an array of arguments",
   "main": "index.js",
   "author": "Kyle Chamberlain",
