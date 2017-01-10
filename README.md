@@ -116,7 +116,7 @@ const url =
   'https://isthisbirdathing.com/api/birds'
 
 const birdFetchers =
-  fetchClique(x => fetch(`${url}/${x}`).then(x => x.json()) )
+  fetchClique(x => fetch(`${url}/${x}bird`).then(x => x.json()) )
 
 const B =
   birdFetchers(['blue', 'shoe', 'fackle'])

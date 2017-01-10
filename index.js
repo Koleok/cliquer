@@ -8,9 +8,10 @@ var clique = curry(function clique(namer, maker, xs) {
   }, {})
 })
 
-var simpleClique = clique(x => x)
+var simpleClique =
+  clique(function(x) { return x })
 
 module.exports = {
-  clique,
-  simpleClique,
+  clique: clique,
+  simpleClique: simpleClique,
 }
