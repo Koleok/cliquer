@@ -43,7 +43,11 @@ const lenses = clique(S.I, S.compose(
   R.of
 ));
 
-it.skip('should make a lens map', () => {
-  const obj = { a: 1, b: NaN, c: 'wonderful' };
+it('should make a lens map', () => {
   const L = lenses(keys);
+  const obj = { one: { two: 'here I am' } };
+  const two = 'I win';
+  const lens = R.compose(L.one, L.two);
+  expect(R.view(lens, obj)).toBe(obj.one.two);
+  expect(R.set(lens, two, obj)).toEqual({ one: { two } });
 });
