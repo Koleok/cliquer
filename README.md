@@ -2,6 +2,16 @@
 
 Creates a group of related functions from a naming function and an array of some primitive value.
 
+# Installation
+
+```bash
+yarn add cliquer
+
+# or
+
+npm i cliquer
+```
+
 # API
 
 ### `clique()`
