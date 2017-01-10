@@ -1,6 +1,6 @@
 # cliquer
 
-Creates a group of related functions from a naming function and an array of some primitive value.
+Creates a group of related functions from a naming function, a value deriver function, and an array of primitive values.
 
 # Installation
 
