@@ -125,7 +125,7 @@ B.facklebird()
   .then(console.log) //=> { isAThing: 'um.. no' }
 
 B.bluebird()
-  .then(console.log) //=> { isAThing: 'of course idiot' }
+  .then(console.log) //=> { isAThing: 'yep 🐦' }
 ```
 
 Get the picture? If not submit a PR to help me explain this better or to add more imaginative/hilarious examples 💖
