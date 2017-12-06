@@ -46,7 +46,7 @@ const always = x => () => x
 const consts = simpleClique(always)
 
 const C = consts(['a', 'b'])
-C.bBar() //=> 'b'
+C.b() //=> 'b'
 ```
 
 # How and why did this come to be?
