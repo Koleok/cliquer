@@ -109,14 +109,14 @@ R.test(F.b, 'abc') //=> false
 /* Even more complex things! */
 
 // Pass a function that names each key by appending `bird`
-const fetchClique =
+const birdClique =
   clique(x => x.concat('bird'))
 
 const url =
   'https://isthisbirdathing.com/api/birds'
 
 const birdFetchers =
-  fetchClique(x => fetch(`${url}/${x}bird`).then(x => x.json()) )
+  birdClique(x => fetch(`${url}/${x}bird`).then(x => x.json()) )
 
 const B =
   birdFetchers(['blue', 'shoe', 'fackle'])
@@ -125,7 +125,7 @@ B.facklebird()
   .then(console.log) //=> { isAThing: 'um.. no' }
 
 B.bluebird()
-  .then(console.log) //=> { isAThing: 'of course idiot' }
+  .then(console.log) //=> { isAThing: 'yep 🐦' }
 ```
 
 Get the picture? If not submit a PR to help me explain this better or to add more imaginative/hilarious examples 💖

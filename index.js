@@ -4,7 +4,9 @@ var assign = require('object-assign')
 
 var clique = curry(function clique(namer, maker, xs) {
   return xs.reduce(function(result, x) {
-    return assign({}, result, { [namer(x)]: maker(x) })
+    var pair = {}
+    pair[namer(x)] = maker(x)
+    return assign({}, result, pair)
   }, {})
 })
 
